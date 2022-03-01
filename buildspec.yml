@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Entered the build phase...
+       - dotnet build src/WeatherForecast.csproj
+  post_build:
+    commands:
+      - echo Build completed successfully
+artifacts:
+  files:
+    - src/bin/Debug/netcoreapp3.1/**/*
+  discard-paths: yes
