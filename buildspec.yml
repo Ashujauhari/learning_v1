@@ -10,5 +10,5 @@ phases:
       - echo Build completed successfully
 artifacts:
   files:
-    - src/bin/Debug/netcoreapp3.1/**/*
+    - /**/*
   discard-paths: yes
